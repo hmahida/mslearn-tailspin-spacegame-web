@@ -49,6 +49,10 @@
   
   - template: templates/build.yml
     parameters:
+      buildConfiguration: 'test'
+  
+  - template: templates/build.yml
+    parameters:
       buildConfiguration: 'Release'
   
   - task: PublishBuildArtifacts@1
